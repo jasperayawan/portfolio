@@ -6,18 +6,36 @@ import { BsFacebook } from 'react-icons/bs'
 import { AiFillInstagram, AiFillGithub } from 'react-icons/ai'
 import InstaProject from '../assets/insta.png'
 import Harvesthub from '../assets/harvesthub.png'
+import { MdVerified } from 'react-icons/md'
+import React, { useState } from 'react';
+import '../App.css'
 
 export default function Layout(){
+    const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+
+    const handleMouseMove = (e) => {
+    const { clientX: x, clientY: y } = e;
+    setCursorPosition({ x, y });
+  };
     return(
-        <>
+        <div className="relative overflow-hidden" onMouseMove={handleMouseMove}>
+            <div
+                className="absolute bg-gradient-to-r from-indigo-500 via-blue-500  to-slate-800 h-[200px] w-[200px] rounded-full animate-cursor-follow"
+                style={{
+                left: `${cursorPosition.x}px`,
+                top: `${cursorPosition.y}px`,
+                bottom: `${cursorPosition.y}px`,
+                }}
+            />
             <Header/>
             <main className="pb-10 pt-[10rem]">
                 <div className="mx-auto max-w-7xl lg:px-8">
                     <div className="relative px-4 sm:px-8 lg:px-12">
                         <div className="mx-auto max-w-2xl lg:max-w-5xl">
                             <div className="max-w-2xl">
-                                <div>
+                                <div className="flex gap-3">
                                     <img src={Jasper} alt="jasper ayawan profile" className="w-[50px] h-[50px] rounded-full ring-1"/>
+                                    <MdVerified className="text-blue-500 text-lg"/>
                                 </div>
                                 <h1 className="mt-6 text-4xl font-bold tracking-tight dark:text-zinc-100 text-zinc-800 sm:text-5xl">Aspiring Software Engineer,Game developer,designer, and Hacker</h1>
                                 <p className="mt-6 text-zinc-600 dark:text-zinc-400 text-base">I'm Jasper, a aspiring software engineer based in Philippines. I'm currently 
@@ -120,6 +138,6 @@ export default function Layout(){
                 </div>
             </main>
             <Footer/>
-        </>
+        </div>
     )
 }
