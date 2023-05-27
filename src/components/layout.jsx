@@ -37,7 +37,7 @@ export default function Layout(){
                                     <img src={Jasper} alt="jasper ayawan profile" className="w-[50px] h-[50px] rounded-full ring-1"/>
                                     <MdVerified className="text-blue-500 text-lg"/>
                                 </div>
-                                <h1 className="mt-6 text-4xl font-bold tracking-tight dark:text-zinc-100 text-zinc-800 sm:text-5xl"><span className="text-indigo-700"><i>F</i></span>ull <span className="text-indigo-700"><i>S</i></span>tack <span className="text-indigo-700"><i>D</i></span>eveloper and Aspiring Game Developer</h1>
+                                <h1 className="mt-6 text-4xl font-bold tracking-tight dark:text-zinc-100 text-zinc-800 sm:text-5xl"><span className="text-indigo-900"><i>F</i></span>ull <span className="text-indigo-900"><i>S</i></span>tack <span className="text-indigo-900"><i>D</i></span>eveloper and Aspiring Game Developer</h1>
                                 <p className="mt-6 text-zinc-600 dark:text-zinc-400 text-base">I'm Jasper, a aspiring software engineer based in Philippines. I'm currently 
                                 4th year college student with the course of <span>Information Technology</span></p>
                                 <div className="flex mt-6 gap-6">

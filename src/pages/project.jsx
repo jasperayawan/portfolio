@@ -10,9 +10,9 @@ export default function Projects(){
     return(
         <>
             <Header/>
-            <div className="my-[5rem] mx-auto max-w-2xl lg:max-w-5xl flex flex-col items-center justify-center gap-28 pt-10">
+            <div className="py-[5rem] mx-auto max-w-2xl lg:max-w-5xl flex flex-col items-center justify-center gap-28 pt-10">
                 <div className='me-auto'>
-                    <h1 className='text-2xl font-bold text-zinc-800'>My Project</h1>
+                    <h1 className='text-2xl font-bold text-zinc-800 mt-10'>My Project</h1>
                 </div>
                 <div className="flex flex-col xl:flex-row gap-6">
                     <Link className='w-full xl:w-1/2 h-auto relative group' to='https://instagram-clone-byjasper.netlify.app/'>
