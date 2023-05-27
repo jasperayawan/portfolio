@@ -24,6 +24,7 @@ export default function Layout(){
             <title>Portfolio</title>
             <meta name="description" content="This our porfolio. I build this portfolio for job hunting"/>
             <meta name="author" content="Jasper Pinoliad Ayawan"></meta>
+            <link rel="canonical" href="/"/>
         </Helmet>
 
             <div className="relative overflow-hidden" onMouseMove={handleMouseMove}>

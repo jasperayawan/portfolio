@@ -14,6 +14,7 @@ export default function Projects(){
             <title>Project - page</title>
             <meta name='description' content='So this is my latest project the I have built.'/>
             <meta name="author" content="Jasper Pinoliad Ayawan"></meta>
+            <link rel="canonical" href="/project"/>
         </Helmet>
             <Header/>
             <div className="py-[5rem] mx-auto max-w-2xl lg:max-w-5xl flex flex-col items-center justify-center gap-28 pt-10">
