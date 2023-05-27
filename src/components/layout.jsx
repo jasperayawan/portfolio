@@ -65,7 +65,7 @@ export default function Layout(){
                     <div className="flex flex-col xl:flex-row gap-6">
                         <Link className='w-full xl:w-1/2 h-auto relative group' to='https://instagram-clone-byjasper.netlify.app/'>
                             <div className=''>
-                                <img src={InstaProject} alt="" className='ring-1 rounded-md ring-zinc-200'/>
+                                <img src={InstaProject} alt="" className='image ring-1 rounded-md ring-zinc-200'/>
                             </div>
                         </Link>
                         <div className='w-full xl:w-1/2 flex flex-col gap-6 lg:justify-between items-end text-right xl:-ml-16 z-10'>
@@ -99,7 +99,7 @@ export default function Layout(){
                     <div className="flex flex-col xl:flex-row-reverse gap-6">
                         <Link className='w-full xl:w-1/2 h-auto relative group' to='https://jasperayawan.github.io/miniP2/'>
                             <div className=''>
-                                <img src={Harvesthub} alt="" className='ring-1 rounded-md ring-zinc-200'/>
+                                <img src={Harvesthub} alt="" className='image ring-1 rounded-md ring-zinc-200'/>
                             </div>
                         </Link>
                         <div className='w-full xl:w-1/2 flex flex-col gap-6 lg:justify-between items-end text-right xl:-ml-16 z-10'>
@@ -130,7 +130,7 @@ export default function Layout(){
                         </div>
                     </div> 
 
-                    <Link className="font-bold text-slate-800 underline" to='/project'>
+                    <Link className="font-bold text-slate-800 text-sm" to='/project'>
                         view all
                     </Link>
                 </div>
