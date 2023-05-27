@@ -4,6 +4,7 @@ import Jasper from '../assets/jasper.jpg'
 import Footer from "./footer";
 import { BsFacebook } from 'react-icons/bs'
 import { AiFillInstagram, AiFillGithub } from 'react-icons/ai'
+import Projects from "./projects";
 
 export default function Layout(){
     return(
@@ -21,20 +22,22 @@ export default function Layout(){
                                 <p className="mt-6 text-zinc-600 dark:text-zinc-400 text-base">I'm Jasper, a aspiring software engineer based in Philippines. I'm currently 
                                 4th year college student with the course of <span>Information Technology</span></p>
                                 <div className="flex mt-6 gap-6">
-                                    <Link>
-                                        <BsFacebook className="text-zinc-800 dark:text-zinc-400 text-lg"/>
+                                    <Link to='https://www.facebook.com/jasper.ayawan.1/'>
+                                        <BsFacebook className="text-zinc-500 dark:text-zinc-400 text-lg"/>
                                     </Link>
-                                    <Link>
-                                        <AiFillInstagram className="text-zinc-800 dark:text-zinc-400 text-lg"/>
+                                    <Link to='https://www.instagram.com/ejayawan22/'>
+                                        <AiFillInstagram className="text-zinc-500 dark:text-zinc-400 text-lg"/>
                                     </Link>
-                                    <Link>
-                                        <AiFillGithub className="text-zinc-800 dark:text-zinc-400 text-lg"/>
+                                    <Link to='https://github.com/jasperayawan'>
+                                        <AiFillGithub className="text-zinc-500 dark:text-zinc-400 text-lg"/>
                                     </Link>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <Projects/>
             </main>
             <Footer/>
         </>
