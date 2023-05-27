@@ -3,6 +3,8 @@
     -webkit-filter: grayscale(100%);
   }
 
+
+
 .animate-cursor-follow {
     animation: cursorFollow .3s infinite alternate;
     filter: blur(3px);
