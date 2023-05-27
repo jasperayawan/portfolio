@@ -5,10 +5,16 @@ import Harvesthub from '../assets/harvesthub.png'
 import ELTech from '../assets/eltech.png'
 import Header from '../components/header'
 import Footer from '../components/footer'
+import { Helmet } from 'react-helmet-async'
 
 export default function Projects(){
     return(
         <>
+        <Helmet>
+            <title>Project - page</title>
+            <meta name='description' content='So this is my latest project the I have built.'/>
+            <meta name="author" content="Jasper Pinoliad Ayawan"></meta>
+        </Helmet>
             <Header/>
             <div className="py-[5rem] mx-auto max-w-2xl lg:max-w-5xl flex flex-col items-center justify-center gap-28 pt-10">
                 <div className='me-auto'>

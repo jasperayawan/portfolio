@@ -9,6 +9,7 @@ import Harvesthub from '../assets/harvesthub.png'
 import { MdVerified } from 'react-icons/md'
 import React, { useState } from 'react';
 import '../App.css'
+import { Helmet } from "react-helmet-async";
 
 export default function Layout(){
     const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
@@ -18,7 +19,15 @@ export default function Layout(){
     setCursorPosition({ x, y });
   };
     return(
-        <div className="relative overflow-hidden" onMouseMove={handleMouseMove}>
+        <>
+        <Helmet>
+            <title>Portfolio</title>
+            <meta name="description" content="This our porfolio. I build this portfolio for job hunting"/>
+            <meta name="author" content="Jasper Pinoliad Ayawan"></meta>
+        </Helmet>
+
+            <div className="relative overflow-hidden" onMouseMove={handleMouseMove}>
+            
             <div
                 className="absolute bg-gradient-to-r from-indigo-500 via-blue-500  to-slate-800 h-[200px] w-[200px] rounded-full animate-cursor-follow"
                 style={{
@@ -139,5 +148,6 @@ export default function Layout(){
             </main>
             <Footer/>
         </div>
+        </>
     )
 }
