@@ -7,10 +7,10 @@
 
 .animate-cursor-follow {
     animation: cursorFollow .3s infinite alternate;
-    filter: blur(3px);
-    -webkit-filter: blur(20px);
-    transform: scale(2);
-    opacity: .4;
+    filter: blur(10px);
+    -webkit-filter: blur(30px);
+    transform: scale(4);
+    opacity: .2;
   }
 
  

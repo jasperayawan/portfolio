@@ -1,12 +1,11 @@
 import Header from "./header";
 import {Link} from 'react-router-dom'
-import Jasper from '../assets/jasper.jpg'
 import Footer from "./footer";
 import { BsFacebook } from 'react-icons/bs'
 import { AiFillInstagram, AiFillGithub } from 'react-icons/ai'
 import InstaProject from '../assets/insta.png'
 import Harvesthub from '../assets/harvesthub.png'
-import { MdVerified } from 'react-icons/md'
+
 import React, { useState } from 'react';
 import '../App.css'
 import { Helmet } from "react-helmet-async";
@@ -38,18 +37,14 @@ export default function Layout(){
                 }}
             />
             <Header/>
-            <main className="pb-10 pt-[10rem]">
+            <main className="pb-10 pt-[8rem]">
                 <div className="mx-auto max-w-7xl lg:px-8">
                     <div className="relative px-4 sm:px-8 lg:px-12">
                         <div className="mx-auto max-w-2xl lg:max-w-5xl">
                             <div className="max-w-2xl">
-                                <div className="flex gap-3">
-                                    <img src={Jasper} alt="jasper ayawan profile" className="w-[50px] h-[50px] rounded-full ring-1"/>
-                                    <MdVerified className="text-blue-500 text-lg"/>
-                                </div>
+                                
                                 <h1 className="mt-6 text-4xl font-bold tracking-tight dark:text-zinc-100 text-zinc-800 sm:text-5xl"><span className="text-indigo-900"><i>F</i></span>ull <span className="text-indigo-900"><i>S</i></span>tack <span className="text-indigo-900"><i>D</i></span>eveloper and Aspiring Game Developer</h1>
-                                <p className="mt-6 text-zinc-600 dark:text-zinc-400 text-base">I'm Jasper, a aspiring software engineer based in Philippines. I'm currently 
-                                4th year college student with the course of <span>Information Technology</span></p>
+                                <p className="mt-6 text-zinc-600 dark:text-zinc-400 text-base">I'm Jasper Ayawan, an aspiring software engineer with a strong passion for crafting intuitive and visually appealing user interfaces. Through this portfolio, I invite you to delve into my journey, projects, and expertise in the world of UI development.</p>
                                 <div className="flex mt-6 gap-6">
                                     <Link to='https://www.facebook.com/jasper.ayawan.1/'>
                                         <BsFacebook className="text-zinc-500 dark:text-zinc-400 text-lg"/>
@@ -75,7 +70,7 @@ export default function Layout(){
                     <div className="flex flex-col xl:flex-row gap-6">
                         <Link className='w-full xl:w-1/2 h-auto relative group' to='https://instagram-clone-byjasper.netlify.app/'>
                             <div className=''>
-                                <img src={InstaProject} alt="" className='image ring-1 rounded-md ring-zinc-200'/>
+                                <img src={InstaProject} alt="" className='image rounded-md'/>
                             </div>
                         </Link>
                         <div className='w-full xl:w-1/2 flex flex-col gap-6 lg:justify-between items-end text-right xl:-ml-16 z-10'>
@@ -109,7 +104,7 @@ export default function Layout(){
                     <div className="flex flex-col xl:flex-row-reverse gap-6">
                         <Link className='w-full xl:w-1/2 h-auto relative group' to='https://jasperayawan.github.io/miniP2/'>
                             <div className=''>
-                                <img src={Harvesthub} alt="" className='image ring-1 rounded-md ring-zinc-200'/>
+                                <img src={Harvesthub} alt="" className='image rounded-md'/>
                             </div>
                         </Link>
                         <div className='w-full xl:w-1/2 flex flex-col gap-6 lg:justify-between items-end text-right xl:-ml-16 z-10'>

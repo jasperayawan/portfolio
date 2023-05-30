@@ -1,29 +1,31 @@
  import { Link } from 'react-router-dom'
- 
+ import { MdVerified } from 'react-icons/md'
+ import Jasper from '../assets/jasper.jpg'
+
  export default function Header(){
     return(
         <>
             <header className='relative'>
-                <div className='mx-auto max-w-2xl lg:max-w-5xl'>
-                    <div className='flex flex-1 justify-center'>
-                        <nav className='py-4 pointer-events-auto  fixed z-50'>
-                            <ul className='flex rounded-full bg-white/90 text-sm px-5 py-3 ring-1 ring-zinc-900/5 dark:text-zinc-200 backdrop-blur gap-5 shadow-lg text-zinc-800 font-medium'>
+                     <nav className='px-4 max-w-5xl mx-auto py-4 pointer-events-auto z-50 flex justify-between items-center'>
+                                <Link className="flex gap-3" to='/'>
+                                    <img src={Jasper} alt="jasper ayawan profile" className="w-[50px] h-[50px] rounded-full ring-1"/>
+                                    <MdVerified className="text-blue-500 text-lg"/>
+                                </Link>
+                            <ul className='flex gap-4'>
                                 <li>
-                                    <Link>About</Link>
+                                    <Link className='font-semibold text-zinc-800'>About</Link>
                                 </li>
                                 <li>
-                                    <Link>Articles</Link>
+                                    <Link className='font-semibold text-zinc-800'>Articles</Link>
                                 </li>
                                 <li>
-                                    <Link to='/project'>Projects</Link>
+                                    <Link to='/project' className='font-semibold text-zinc-800'>Projects</Link>
                                 </li>
                                 <li>
-                                    <Link>Contact</Link>
+                                    <Link className='font-semibold text-zinc-800'>Contact</Link>
                                 </li>
                             </ul>
                         </nav>
-                    </div>
-                </div>
             </header>
         </>
     )
